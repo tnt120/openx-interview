@@ -103,34 +103,38 @@ class Tree {
   }
 }
 
-// const tree = new Tree();
-// tree.insertNode(1, 5);
-// tree.insertNode(2, 3, 1);
-// tree.insertNode(3, 7, 1);
-// tree.insertNode(4, 2, 2);
-// tree.insertNode(5, 5, 2);
-// tree.insertNode(6, 1, 3);
-// tree.insertNode(7, 0, 3);
-// tree.insertNode(8, 2, 7);
-// tree.insertNode(9, 8, 7);
-// tree.insertNode(10, 5, 9);
+function main() {
+  const tree = new Tree();
+  tree.insertNode(1, 5);
+  tree.insertNode(2, 3, 1);
+  tree.insertNode(3, 7, 1);
+  tree.insertNode(4, 2, 2);
+  tree.insertNode(5, 5, 2);
+  tree.insertNode(6, 1, 3);
+  tree.insertNode(7, 0, 3);
+  tree.insertNode(8, 2, 7);
+  tree.insertNode(9, 8, 7);
+  tree.insertNode(10, 5, 9);
 
-// const tree2 = new Tree();
-// tree2.insertNode(1, 5);
-// tree2.insertNode(2, 3, 1);
-// tree2.insertNode(3, 7, 1);
-// tree2.insertNode(4, 2, 2);
-// tree2.insertNode(5, 5, 2);
-// tree2.insertNode(6, 1, 3);
-// tree2.insertNode(7, 0, 3);
-// tree2.insertNode(8, 2, 7);
-// tree2.insertNode(9, 8, 7);
-// tree2.insertNode(10, 5, 9);
+  const tree2 = new Tree();
+  tree2.insertNode(1, 5);
+  tree2.insertNode(2, 3, 1);
+  tree2.insertNode(3, 7, 1);
+  tree2.insertNode(4, 2, 2);
+  tree2.insertNode(5, 5, 2);
+  tree2.insertNode(6, 1, 3);
+  tree2.insertNode(7, 0, 3);
+  tree2.insertNode(8, 2, 7);
+  tree2.insertNode(9, 8, 7);
+  tree2.insertNode(10, 5, 9);
 
-// tree.leafsNumber();
-// tree.largestPath();
-// tree.isEquivalent(tree2);
+  console.log("Task 1");
+  console.log("Zadanie 1: ", tree.leafsNumber());
+  console.log("Zadanie 2: ", tree.largestPath());
+  console.log("Zadanie 3: ", tree.isEquivalent(tree2));
+}
 
 module.exports = {
   Tree,
+  main,
 };

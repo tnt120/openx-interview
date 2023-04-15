@@ -4,7 +4,8 @@
   "description": "",
   "main": "task1.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "start": "node index.js --experimental-fetch"
   },
   "keywords": [],
   "author": "",

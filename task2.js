@@ -10,7 +10,9 @@ async function main() {
     "https://fakestoreapi.com/carts/?startdate=2000-01-01&enddate=2023-04-07"
   );
   const productsData = await logJSONData("https://fakestoreapi.com/products");
-  //console.log("Zadanie 1: ", { usersData, cartsData, productsData });
+
+  console.log("Task 2");
+  console.log("Zadanie 1: ", { usersData, cartsData, productsData });
 
   // Zadanie 2
   const categories = getCategories(productsData);
@@ -89,11 +91,10 @@ function getFurthestAwayUsers(users) {
   return userPair;
 }
 
-//main();
-
 module.exports = {
   calculateDistance,
   getCategories,
   getCart,
   getFurthestAwayUsers,
+  main,
 };
